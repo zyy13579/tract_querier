@@ -24,7 +24,7 @@ def find_queries_path():
     # Case where the Tract_querier is cloned from git and simply
     # added to the python path, without installation.
     possible_paths.append(os.path.abspath(os.path.join(
-                                          os.path.dirname(__file__), 'data')))
+                                          os.path.dirname(__file__), 'queries')))
 
     paths_found = [path for path in possible_paths if os.path.exists(path)]
 
